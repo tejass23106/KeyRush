@@ -18,7 +18,7 @@
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 **Play KeyRush:** https://keyrush-3qzt.onrender.com/
 
@@ -26,7 +26,7 @@ Experience real-time typing races, practice your typing speed, and compete with 
 
 
 
-## 🌐 Deployment
+##  Deployment
 
 KeyRush is deployed on Render.
 
