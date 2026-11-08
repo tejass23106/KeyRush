@@ -14,6 +14,9 @@
   <img src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white" alt="Vite" />
 </p>
 
+
+<img src="https://img.shields.io/badge/Deployment-Live-success" alt="Deployment Live" />
+
 ---
 
 ## 🚀 Live Demo
@@ -22,7 +25,7 @@
 
 Experience real-time typing races, practice your typing speed, and compete with friends in multiplayer mode.
 
-**Deployment:** Render
+
 
 ## 🌐 Deployment
 
@@ -1049,7 +1052,7 @@ Examples include Render, Railway, and Fly.io.
 ### Build Command
 
 ```bash
-npm install && npm run build
+npm ci && npm run build
 ```
 
 ### Start Command
@@ -1064,7 +1067,7 @@ Configure the following values on the hosting platform:
 
 ```env
 PORT=10000
-ALLOWED_ORIGINS=https://your-production-domain.com
+ALLOWED_ORIGINS=https://keyrush-3qzt.onrender.com
 NODE_ENV=production
 ```
 
