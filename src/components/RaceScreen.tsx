@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { soundService } from '../services/soundService';
 import {
   Passage,
@@ -7,7 +7,11 @@ import {
   CAR_COLORS,
   WpmSample,
 } from '../types/game';
-import { PhaserCanvas } from './PhaserCanvas';
+const PhaserCanvas = lazy(() =>
+  import('./PhaserCanvas').then((module) => ({
+    default: module.PhaserCanvas,
+  }))
+);
 import {
   computeMatching,
   calculateWpm,
@@ -548,10 +552,27 @@ export const RaceScreen: React.FC<RaceScreenProps> = ({
 
 
       {/* track canvas */}
-      <div style={{ position: 'relative', order: 2 }}> <PhaserCanvas
-        progressRatio={progressRatio}
-        players={canvasPlayers}
-      />
+<div style={{ position: 'relative', order: 2 }}>
+  <Suspense
+    fallback={
+      <div
+        style={{
+          width: '100%',
+          minHeight: '320px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        Loading track...
+      </div>
+    }
+  >
+    <PhaserCanvas
+      progressRatio={progressRatio}
+      players={canvasPlayers}
+    />
+  </Suspense>
 
         ```
         {activeCountdown > 0 && (
