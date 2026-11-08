@@ -12,10 +12,9 @@
   <img src="https://img.shields.io/badge/Phaser-3-8A2BE2" alt="Phaser 3" />
   <img src="https://img.shields.io/badge/Socket.IO-4-black?logo=socketdotio" alt="Socket.IO" />
   <img src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Deployment-Live-success" alt="Deployment Live" />
 </p>
 
-
-<img src="https://img.shields.io/badge/Deployment-Live-success" alt="Deployment Live" />
 
 ---
 
