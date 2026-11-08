@@ -1,0 +1,32 @@
+node_modules
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+dist-server/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Testing
+coverage/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+
+# External reference project
+Engine_Sim-main/
+Engine_Sim-main.zip
