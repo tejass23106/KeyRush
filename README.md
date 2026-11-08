@@ -16,6 +16,27 @@
 
 ---
 
+## 🚀 Live Demo
+
+**Play KeyRush:** https://keyrush-3qzt.onrender.com/
+
+Experience real-time typing races, practice your typing speed, and compete with friends in multiplayer mode.
+
+**Deployment:** Render
+
+## 🌐 Deployment
+
+KeyRush is deployed on Render.
+
+- **Live Website:** https://keyrush-3qzt.onrender.com/
+- **Hosting Platform:** Render
+- **Health Check:** https://keyrush-3qzt.onrender.com/health
+- **Frontend:** React + Vite
+- **Backend:** Node.js + Express + Socket.IO
+
+The Express server serves the production frontend and handles multiplayer communication through Socket.IO.
+
+
 ## Table of Contents
 
 1. [Overview](#overview)
